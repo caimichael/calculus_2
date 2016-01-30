@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  30 JAN 2016 15:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  30 JAN 2016 17:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -250,21 +250,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--47
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--55
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--55
-
- []
-
 <c_graph.pdf, id=31, 361.35pt x 222.8325pt>
 File: c_graph.pdf Graphic file (type pdf)
  <use c_graph.pdf>
 Package pdftex.def Info: c_graph.pdf used on input line 56.
 (pdftex.def)             Requested size: 227.64894pt x 140.38521pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--57
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 58--66
 
@@ -303,52 +303,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--89
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--110
+Underfull \hbox (badness 10000) in paragraph at lines 93--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--110
+Underfull \hbox (badness 10000) in paragraph at lines 93--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--110
+Underfull \hbox (badness 10000) in paragraph at lines 93--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--110
+Underfull \hbox (badness 10000) in paragraph at lines 93--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--110
+Underfull \hbox (badness 10000) in paragraph at lines 93--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--110
+Underfull \hbox (badness 10000) in paragraph at lines 93--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--110
+Underfull \hbox (badness 10000) in paragraph at lines 93--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--110
+Underfull \hbox (badness 10000) in paragraph at lines 93--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--110
+Underfull \hbox (badness 10000) in paragraph at lines 93--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--110
+Underfull \hbox (badness 10000) in paragraph at lines 93--113
 
  []
 
@@ -361,16 +361,6 @@ on: multiple pdfs with page group included in a single page
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./2L_graph.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 111--113
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--113
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 118--127
 
  []
@@ -424,7 +414,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--132
 Here is how much of TeX's memory you used:
  1994 strings out of 493089
  28946 string characters out of 6134842
- 100278 words of memory out of 5000000
+ 102278 words of memory out of 5000000
  5475 multiletter control sequences out of 15000+600000
  8848 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -443,7 +433,7 @@ nts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
 cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 12.pfb>
-Output written on assignment_1.pdf (5 pages, 199806 bytes).
+Output written on assignment_1.pdf (5 pages, 200376 bytes).
 PDF statistics:
  127 PDF objects out of 1000 (max. 8388607)
  87 compressed objects within 1 object stream

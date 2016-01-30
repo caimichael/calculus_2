@@ -51,8 +51,8 @@ By the Fundamental Theorem of Calculus Part 1, we know that $R(x) = \int_{0}^{x}
 \\
 $f'(x) = \frac{d}{dx}(\sqrt{1+x^2}) = \frac{1}{2}(1+x^2)^{-\frac{1}{2}}*2x$\\
 = $x(1+x^2)^{-\frac{1}{2}}$\\
-=$\frac{x}{\sqrt{1+x^2}}$ \\
-
+=$\frac{x}{\sqrt{1+x^2}}$ \\~\\
+Below is a graph of $f'(x) = R''(x)$\\
 \includegraphics[width=.45\textwidth]{c_graph.pdf}
 
 \noindent Because $f'(x)$ is positive at $[0,\infty]$ and negative at $[-\infty,0]$, $R(x)$ is \textbf{concave  up at} $[0,\infty]$ and \textbf{concave down at} $[-\infty,0]$.
@@ -105,14 +105,14 @@ Thus we have: $f(x) = -x^2f(x) + \frac{x}{2} + \frac{x^3}{2}$\\
 =$f(x) = \frac{x}{2}$\\~\\
 (b) \textit{Determine the value of C}.\\~\\
 $\int_{0}^{x}f(t)dt = (\int_{x}^{1}t^2f(t)dt) + \frac{x^2}{4}+\frac{x^4}{8}+C$\\~\\
-We plug in the $f(x)$ that we solved for:\\~\\
-$\int_{0}^{x}\frac{x}{2} = \int_{x}^{1}t^2\frac{x}{2} + \frac{x^2}{4}+\frac{x^4}{8}+C$\\~\\
+We plug in the $f$ that we solved for:\\~\\
+$\int_{0}^{x}\frac{t}{2} = \int_{x}^{1}t^2\frac{t}{2} + \frac{x^2}{4}+\frac{x^4}{8}+C$\\
+$ = \frac{1}{2}\int_0^x tdt = \frac{1}{2} \int_x^1 t^3dt + \frac{x^2}{4}+\frac{x^4}{8}+C$ \\
+$ = \frac{1}{2} * \frac{t^2}{2} \bigg| 0$ and $x$ $= \frac{1}{2} * \frac{t^4}{4} \bigg| x$ and 1 $+ ...$\\
+Now we evaluate $\frac{1}{2} * \frac{t^2}{2}\bigg|$ on the LHS at 0 and 1 and $\frac{1}{2} *  \frac{t^4}{4}\bigg|$ on the RHS at x and 1.\\~\\
 
-\noindent Let $u = t^2$ and thus $du = 2tdt$\\
-Now we evaluate $\frac{t^2}{4}\bigg|$ on the LHS at 0 and 1 and $\frac{u^2}{8}\bigg|$ on the RHS at x and 1.\\~\\
-
-\noindent Thus simplified we get, $\frac{x^2}{4} = \frac{1}{8}-\frac{x^2}{8} + \frac{x^2}{4}+\frac{x^4}{8}+C$\\
-And therefore, $C = \frac{1}{8}$
+\noindent Thus simplified we get, $\frac{x^2}{4} = \frac{1}{8}-\frac{x^4}{8} + \frac{x^2}{4}+\frac{x^4}{8}+C$\\
+And therefore, $C = \frac{-1}{8}$
 
 \section{Exercise 4}
 Evaluate the following indefinite and definite integrals using substitution. Clearly indicate your choice for $u$ and $du$. \\~\\
