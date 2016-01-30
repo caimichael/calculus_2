@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  30 JAN 2016 08:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  30 JAN 2016 15:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -215,11 +215,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--24
 
  []
 
-<d_graph.pdf, id=1, 361.35pt x 236.885pt>
+<d_graph.pdf, id=1, 361.35pt x 223.83624pt>
 File: d_graph.pdf Graphic file (type pdf)
  <use d_graph.pdf>
 Package pdftex.def Info: d_graph.pdf used on input line 37.
-(pdftex.def)             Requested size: 278.24104pt x 182.40201pt.
+(pdftex.def)             Requested size: 278.24104pt x 172.35443pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--38
 
@@ -354,12 +354,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--110
 
 [3 <./2J_graph.pdf> <./2K_graph.pdf
 
-pdfTeX warning: /usr/texbin/pdflatex (file ./2K_graph.pdf): PDF inclusion: mult
-iple pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./2K_graph.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
 > <./2L_graph.pdf
 
-pdfTeX warning: /usr/texbin/pdflatex (file ./2L_graph.pdf): PDF inclusion: mult
-iple pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./2L_graph.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
 >]
 Underfull \hbox (badness 10000) in paragraph at lines 111--113
 
@@ -405,6 +405,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--132
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--132
+
+ []
+
 [4] [5] (./assignment_1.aux) ) 
 Here is how much of TeX's memory you used:
  1994 strings out of 493089
@@ -428,7 +443,7 @@ nts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
 cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 12.pfb>
-Output written on assignment_1.pdf (5 pages, 201720 bytes).
+Output written on assignment_1.pdf (5 pages, 199806 bytes).
 PDF statistics:
  127 PDF objects out of 1000 (max. 8388607)
  87 compressed objects within 1 object stream

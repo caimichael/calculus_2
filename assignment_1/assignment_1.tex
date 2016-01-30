@@ -33,10 +33,10 @@ Suppose $f$ is continuous on $[-a,a]$: \\
 To determine whether $R(x)$ is an odd or an even number, we must compare the outcomes of R given opposite inputs, x and -x. \\
 For example, compare $R(1) = \int_{0}^{1} \sqrt{1+t^2}dt$ to $R(-1) = \int_{0}^{-1} \sqrt{1+t^2}dt$ which equals $-\int_{-1}^{0} \sqrt{1+t^2}dt$. \\
 \\
-(d) \textit{The graph clearly demonstrates the function:}\\
+(d) \textit{The graph clearly demonstrates the function $R(x)$:}\\
 \includegraphics[width=.55\textwidth]{d_graph.pdf}
 
-The integrand is a symmetric function; however since $R(-1)$ causes the upper limit of the integral to be lower than the lower limit, you must evaluate $R(-1) = \int_{0}^{-1} \sqrt{1+t^2} dt $ as if it were $-\int_{0}^{1}\sqrt{1+t^2}dt$. Therefore $R(-1) = -R(1)$, and thus \textbf{$R(x)$ is an odd function.}
+The integrand is a symmetric function, and thus even; however since $R(-1)$ causes the upper limit of the integral to be lower than the lower limit, you must evaluate $R(-1) = \int_{0}^{-1} \sqrt{1+t^2} dt $ as if it were $-\int_{0}^{1}\sqrt{1+t^2}dt$. Therefore $R(-1) = -R(1)$, and thus \textbf{$R(x)$ is an odd function.}
 \\
 
 \noindent (b) \textit{Is $R(x)$ increasing or decreasing?}\\
@@ -55,8 +55,8 @@ $f'(x) = \frac{d}{dx}(\sqrt{1+x^2}) = \frac{1}{2}(1+x^2)^{-\frac{1}{2}}*2x$\\
 
 \includegraphics[width=.45\textwidth]{c_graph.pdf}
 
-\noindent Because $f'(x)$ is strictly increasing, then \textbf{$R(x)$ is concave up.}\\
-\\
+\noindent Because $f'(x)$ is positive at $[0,\infty]$ and negative at $[-\infty,0]$, $R(x)$ is \textbf{concave  up at} $[0,\infty]$ and \textbf{concave down at} $[-\infty,0]$.
+\\~\\
 (e) \textit{Find $\lim_{x\to\infty}\frac{R(x)}{x^2}$} \\
 L'Hospital's rule states:\\
 Suppose $f$ and $g$ are differentiable and $g'(x) \neq 0$ near a. \\
@@ -128,12 +128,13 @@ $= x - ln|x+2| + C$\\~\\
 \noindent(b) $\int \frac{1}{xln(x)ln(ln(x))}dx$\\
 Let $u = ln(ln(x))$ and thus $du = \frac{1}{ln(x)} * \frac{1}{x} dx = \frac{1}{xln(x)} dx$\\
 $= \int \frac{du}{u} = \int u^{-1} du = ln|u| + C$\\
-$= ln|ln(ln(x))|+C$ \\~\\
+$= ln|ln(ln(x))|+C$ \\~\\~\\~\\~\\
 
 \noindent(c) $\int_{0}^{\pi/2} sin^n(x)cos(x)dx$ for $n \geq 0$\\
 Let $u = sin(x)$ and thus $du = cos(x)dx$\\
-$= \int_0^{\pi/2} u^n du = \frac{u^{n+1}}{n+1} \bigg| 0$ to $\pi/2$\\
-$= \frac{sin^{n+1}(\pi/2)}{n+1}$
+Therefore the upper limit becomes $sin(\pi/2) = 1$ and the lower limit becomes $sin(0) = 0$\\
+$= \int_0^{1} u^n du = \frac{u^{n+1}}{n+1} \bigg| 0$ to $1$\\
+$=\frac{1}{n+1}$
 
 \end{document}
 
