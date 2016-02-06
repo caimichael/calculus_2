@@ -1,0 +1,39 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+
+%SetFonts
+
+%SetFonts
+
+
+\title{Assignment 2 Problem 1}
+\author{Michael Cai}
+\date{\today}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+\noindent \textbf{1.} \textit{Let $f$ be twice differentiable with $f(0) = 6, f(1) = 5$, and $f'(1) = 2.$ Use integration by parts together with the given information to evaluate the integral} $\int_0^1 xf''(x) dx$\\
+
+For the integral $\int_0^1 xf''(x)dx$ it is obvious that we must use integration by parts since the integrand is a product. Therefore, I am going to choose $u=x$ and thus $du = dx$ and $dv = f''(x)dx$ and thus $v = f'(x)$ because I want the $u$ term to become simpler upon using IBP. \\~\\
+Therefore, $\int_0^1 xf''(x)dx = xf'(x) - \int_0^1 f'(x)dx$\\
+$\left.  = xf'(x) \right|^0_1 - \int_0^1 f'(x)dx$\\
+$\left.  =xf'(x) \right|^0_1 - \left. f(x) \right|^0_1$\\
+$= 1f'(1) - 0f'(0) -(f(1)-f(0))$\\
+$= 2 - 0 - 5 + 6$\\~\\
+$\int_0^1 xf''(x)dx = 3$\\
+
+The process to find the answer is a pretty straightforward integration by parts problem. After choosing the u's and the v's via Integration by Parts, I just evaluated the integral and then plugged in the values given by the problem to find the answer.
+
+%\section{}
+%\subsection{}
+
+
+
+\end{document}  
