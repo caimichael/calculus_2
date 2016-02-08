@@ -1,0 +1,69 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+
+%SetFonts
+
+%SetFonts
+
+
+\title{Assignment 2 Problem 3}
+\author{Michael Cai}
+\date{\today}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+\noindent3. \\
+(a)
+\textit{Use the formulas for $sin(A+B)$ and $sin(A-B)$ to show that:}\\
+$sinAcosB = \frac{1}{2}[sin(A-B) + sin(A+B)]$\\~\\
+The Angle Addition Identity for $sin$ states:\\
+$sin(A+B) = sinAcosB + cosAsinB$\\
+$sin(A-B) = sinAcosB - cosAsinB$\\~\\
+Prove: $sinAcosB = \frac{1}{2}[sin(A-B) + sin(A+B)$\\~\\
+$sin(A+B) = sinAcosB + cosAsinB$\\
+$sinAcosB = sin(A+B) - cosAsinB$\\
+Now add $sin(A-B)$ to both sides\\
+$sinAcosB + sin(A-B) = sin(A+B) -cosAsinB + sin(A-B)$\\
+Expand on the left hand side\\
+$sinAcosB + sinAcosB - cosAsinB = sin(A=B) +sin(A+B) - cosAsinB$\\
+$2sinAcosB - cosAsinB + cosAsinB = sin(A-B) + sin(A+B)$\\~\\
+Therefore $sinAcosB = \frac{1}{2}(sin(A-B) + sin(A+B))$\\
+
+\noindent (b) \textit{Use part (a) to evaluate $\int sin(3x)cos(x)dx$}\\
+Recall from part (a) that $sinAcosB = \frac{1}{2}(sin(A-B) + sin(A+B))$\\
+Plug it in:\\
+$\int sin(3x)cos(x)dx = \frac{1}{2}(sin(3x-x) + sin(3x+x))$\\
+$= \frac{1}{2} \int sin(2x) + sin(4x)dx$\\
+$= \frac{1}{2} \int sin(2x)dx + \frac{1}{2} \int sin(4x)dx$\\~\\
+First consider $\int sin(2x)dx$:\\
+By the double angle formula, $\int sin(2x)dx = \int 2sinxcosx dx$\\
+Therefore, we I use u-substitution on $\in 2sinxcosx dx$ and set $u = sinx$ making $du = cosxdx$.\\
+Thus $\int 2sinxcosx = 2 \int udu = 2 (\frac{1}{2} u^2 + C) = u^2 + C = sin^2(x) + C$\\~\\
+
+\noindent Now we consider $\int sin(4x)dx$:\\
+Also apply the double angle formula.\\
+$\int sin(4x)dx = \int sin(2(2x))dx = \int 2sin(2x)cos(2x)dx$\\
+If you expand both the sin(2x) and cos(2x) components of this new integral using the double angle formula you get:\\
+$2 \int (2sin(x)cos(x))(cos^2(x)-sin^2(x)) dx$\\
+$= 2 \int 2sinxcos^3(x) - 2 sin^3(x)cos(x) dx$\\
+$= 4 \int cos^3(x) sin(x)dx - 4 \int sin^3(x)cos(x)dx$\\~\\
+Now we use u-substitution for both integrals ($u$ for the first and $u'$ for the second)\\
+Let $u = cos(x)$ and thus $du = -sin(x)dx$. \\
+Let $u' = sin(x)$ and thus $du' = cos(x)dx$. \\~\\
+Therefore, $4 \int cos^3(x) sin(x)dx - 4 \int sin^3(x)cos(x)dx = 4 \int u^3 du - 4 \int u'^3 du'$\\
+$= -4(\frac{1}{4}u^4 + C) -4(\frac{1}{4}u'^4+C')$\\
+$= -cos^4(x) - sin^4(x) + C''$\\~\\
+Plugging it all back together we get:\\
+$\int sin(3x)cos(x)dx = \frac{1}{2}(sin(2x) + sin(4x))$\\
+$= \frac{1}{2}(-cos^4(x) - sin^4(x) + C'') + \frac{1}{2}(sin^2(x)+C)$\\
+$= -\frac{1}{2}cos^4(x)-\frac{1}{2}sin^4(x) + \frac{1}{2}sin^2(x) + C$
+
+
+\end{document}  

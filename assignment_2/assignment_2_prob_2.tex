@@ -22,13 +22,52 @@
 \noindent \textbf{2.} \textit{Let $K_m$ denote the following indefinite integral:}\\
 $K_m(x) = \int_ x^m sin(x)dx$ for $m = 0,1,2...$\\~\\
 (a) \textit{Evaluate $K_1(x)$}. \\
-$K_1(x) = \int_ x^1 sin(x)dx$\\
+$K_1(x) = \int x^1 sin(x)dx$\\
 Integration by parts would be the strategy to solve the integral because the integrand is a product. Therefore, we let $u = x$ and thus $du = dx$ and $dv = sinxdx$ and thus $v = -cosx$.\\
-$\int_ xsin(x) = -xcosx + \int_ cosxdx$ \\
-$ = -xcosx + sinx + C$
+$\int x^1 sin(x) = -xcosx + \int cosxdx$ \\
+$ = -xcosx + sinx + C$\\
 
-%\section{}
-%\subsection{}
+\noindent (b) \textit {Show $K_m(x) = -x^m cos(x) + mx^{m-1}sin(x) - m(m-1)K_{m-2}x$}\\
+$K_m(x) = \int x^m sin(x)dx$\\
+Because the integrand is a product, I am going to use integration by parts and select $u = x^m$ and thus $du = mx^{m-1}$. I choose $dv = sin(x)dx$ and thus $v = -cos(x)$. \\
+Therefore $\int x^msin(x)dx = -x^mcos(x) + \int mx^{m-1}cos(x)dx$\\~\\
+Now consider $\int mx^{m-1}cos(x)dx$ which equals $m \int x^{m-1}cos(x)dx$\\
+Again we use integration by parts because the integrand is a product.\\
+I choose $u = x^{m-1}$ and thus $du = (m-1)x^{m-2}$. I choose $dv = cos(x)dx$ and thus $v = sin(x)$.\\
+Therefore $m \int x^{m-1} cos(x)dx = m(x^{m-1}sin(x) - (m-1) \int x^{m-2}sin(x)dx$\\
+$= mx^{m-1}sin(x)-m(m-1) \int x^{m-2} sin(x)dx$\\
+This last integral $\int x^{m-2} sin(x)dx$ is equal to $K_{m-2}(x)$. \\~\\
+Thus, plugging this integral back into the original equation, where we left off: \\
+$\int x^msin(x)dx = -x^mcos(x) + \int mx^{m-1}cos(x)dx$\\
+$= \int x^msin(x)dx = -x^mcos(x) + mx^{m-1}sin(x)-m(m-1) K_{m-2}(x)$\\~\\~\\
+
+\noindent (c) \textit{ Calculate $K_0(x)$, $K_2(x)$, and $K_4(x)$}\\
+$K_0(x) = \int x^0 sin(x)dx = \int sin(x)dx = -cos(x) + C$\\
+$K_2(x) = \int x^2sin(x)dx$\\
+Because the integrand is a product, we again apply integration by parts.\\
+I choose $u = x^2$ and thus $du = 2xdx$. I choose $dv = sin(x)dx$ and thus $v = -cos(x)$.\\
+Therefore $\int x^2 sin(x)dx = -x^2cos(x) + 2 \int xcos(x)dx$.\\
+Consider the integral $\int xcos(x)dx$\\
+Again we apply IBP. Let $u = x$ and thus $du = dx$. Let $dv = cos(x)dx$ and thus $v = sin(x)$.\\
+$\int xcos(x)dx = xsin(x) - \int sin(x)dx = xsin(x) - cos(x) + C$\\~\\
+Plugging this back into the original equations we get:\\
+$\int x^2 sin(x)dx = -x^2cos(x) + 2 \int xcos(x)dx = -x^2cos(x) + 2(xsin(x) - cos(x) + C)$\\
+$= -x^2cos(x) + 2xsin(x) + 2cos(x) + C': C' = 2C$\\~\\
+$K_4(x) = \int x^4 sin(x)dx$\\
+Recall the formula for $K_m(x)$:\\
+$\int x^msin(x)dx = -x^mcos(x) + mx^{m-1}sin(x)-m(m-1) K_{m-2}(x)$\\
+Thus we choose m = 4 and we get:\\
+$= \int x^4sin(x)dx = -x^4cos(x) + 4x^3 sin(x) - 4(3)K_2(x)$\\
+Then we plug in $K_2(x)$ and we get:\\
+$= -x^4cos(x) + 4x^3sin(x) + 12x^2cos(x) + 24xsin(x) + 24cos(x) + C$\\
+
+\noindent(d) \textit{Solve the definite integral $\int_0^\pi x^4 sin(x)dx$}\\
+To get the answer, we just need to evaluate the indefinite integral that we just calculated with the bounds 0 and $\pi$. \\
+$\int_0^\pi x^4 sin(x)dx$ equals\\
+$-\pi^4cos(\pi) + 4\pi^3sin(\pi) + 12\pi^2cos(\pi) + 24\pi sin(\pi) + 24cos(\pi)$\\
+minus $(0^4cos(0) + 4(0)^3sin(0) + 12(0)^2cos(0) + 24(0) sin(0) + 24cos(0))$\\
+$= \pi^4 - 12\pi^2 - 24 - 24 = \pi^4 - 12\pi^2 - 48$.\\
+
 
 
 
