@@ -29,11 +29,11 @@ $ = -xcosx + sinx + C$\\
 
 \noindent (b) \textit {Show $K_m(x) = -x^m cos(x) + mx^{m-1}sin(x) - m(m-1)K_{m-2}x$}\\
 $K_m(x) = \int x^m sin(x)dx$\\
-Because the integrand is a product, I am going to use integration by parts and select $u = x^m$ and thus $du = mx^{m-1}$. I choose $dv = sin(x)dx$ and thus $v = -cos(x)$. \\
+Because the integrand is a product, I am going to use integration by parts and select $u = x^m$ and thus $du = mx^{m-1}dx$. I choose $dv = sin(x)dx$ and thus $v = -cos(x)$. \\
 Therefore $\int x^msin(x)dx = -x^mcos(x) + \int mx^{m-1}cos(x)dx$\\~\\
 Now consider $\int mx^{m-1}cos(x)dx$ which equals $m \int x^{m-1}cos(x)dx$\\
 Again we use integration by parts because the integrand is a product.\\
-I choose $u = x^{m-1}$ and thus $du = (m-1)x^{m-2}$. I choose $dv = cos(x)dx$ and thus $v = sin(x)$.\\
+I choose $u = x^{m-1}$ and thus $du = (m-1)x^{m-2}dx$. I choose $dv = cos(x)dx$ and thus $v = sin(x)$.\\
 Therefore $m \int x^{m-1} cos(x)dx = m(x^{m-1}sin(x) - (m-1) \int x^{m-2}sin(x)dx$\\
 $= mx^{m-1}sin(x)-m(m-1) \int x^{m-2} sin(x)dx$\\
 This last integral $\int x^{m-2} sin(x)dx$ is equal to $K_{m-2}(x)$. \\~\\
