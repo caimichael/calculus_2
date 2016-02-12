@@ -21,6 +21,27 @@
 %\section{}
 %\subsection{}
 
+\noindent 1. \textit{Find the area of the region bounded by $y = \frac{3x^2+x}{(x^2+1)(x+1)}$, $y=0$, $x=0$, and $x=1$.}\\~\\
+For the integral $\int_0^1 \frac{3x^2+x}{(x^2+1)(x+1)}$ we first use partial fraction decomposition because the integrand is a rational function (a ratio of polynomials).\\
+Thus $\int_0^1 \frac{3x^2+x}{(x^2+1)(x+1)} = \frac{Ax + B}{x^2+1} + \frac{C}{x+1}$\\
+We then cross multiply and consider the equality of the numerator of the integrand with the cross-multiplied terms of the partial fractions.\\
+$3x^2 + x = (Ax + B)(x+1) + C(x^2+1)$\\
+If $x = -1$ then $C=1$.\\
+We then expand the RHS to solve for the match the coefficients on the LHS and the RHS.\\
+$3x^2 + x = Ax^2 + Ax + Bx + B + Cx^2 + C$\\
+$3x^2 + x = (A+C)x^2 + (A+B)x + B+C$\\
+Since the constant term on the LHS is 0, then $B+C = 0 \rightarrow B = -1$\\
+Since the coefficient of the linear term, $x$, on the LHS = 1 then $1 = A+B \rightarrow A = 2$\\
+Therefore: $\frac{3x^2+x}{(x^2+1)(x+!)} = \frac{2x-1}{x^2+1} + \frac{1}{x+1}$\\
+$\int_0^1 \frac{3x^2+x}{(x^2+1)(x+1)} = \int_0^1 \frac{2x-1}{x^2+1} + \int_0^1 \frac{1}{x+1}$\\
+$= \int_0^1 \frac{2x}{x^2+1} - \int_0^1 \frac{1}{x^2+1} + \int_0^1 \frac{1}{x+1}$\\~\\
+Consider the $\int_0^1 \frac{2x}{x^2+1}$ term:\\
+We use u-substitution and set $u= x^2 + 1$ and thus $du = 2xdx$ and the limits become $u = 2$ and $u = 1$.\\
+Consider the $\int_0^1 \frac{1}{x+1}$ term:\\
+Here we also use u-substitution and set $u = x+1$ and thus $du = dx$ with the limits becoming $u = 2$ and $u = 1$.\\
+Now if we integrate all 3 of the separate terms, we get get two with natural logs and one with arctan.\\
+$= \left. ln|u| \right|_1^2 - \left. tan^{-1}(x) \right|_0^1 + \left. ln|u| \right|_1^2$\\
+$= 2ln|2| - \frac{\pi}{4}$
 
 
 \end{document}  
