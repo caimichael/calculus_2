@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  12 FEB 2016 15:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 FEB 2016 11:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -225,11 +225,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--45
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./assignment3_prob1.aux) ) 
 Here is how much of TeX's memory you used:
- 2256 strings out of 493089
- 31832 string characters out of 6134842
+ 2254 strings out of 493089
+ 31808 string characters out of 6134842
  97718 words of memory out of 5000000
- 5725 multiletter control sequences out of 15000+600000
- 10478 words of font info for 40 fonts, out of 8000000 for 9000
+ 5724 multiletter control sequences out of 15000+600000
+ 10132 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,6n,26p,249b,199s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/publ
@@ -242,12 +242,11 @@ nts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
-10.pfb>
-Output written on assignment3_prob1.pdf (1 page, 109035 bytes).
+sy8.pfb>
+Output written on assignment3_prob1.pdf (1 page, 97814 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
+ 48 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
