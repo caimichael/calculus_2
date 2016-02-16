@@ -35,6 +35,23 @@ $\int_0^{\pi/2} \frac{sin^7(x)}{sin^7(x) + cos^7(x)} dx = \frac{\pi}{4}$\\~\\
 
 \noindent (c) \textit{Evaluate the integral by hand as follows.}\\~\\
 (i) Rewrite the integral using the substitution $u = \frac{\pi}{2} - x$.\\
+If $u = \frac{\pi}{2} - x$ then $x = \frac{\pi}{2} - u$.\\
+The limits then become $\frac{\pi}{2}$ and 0 respectively, but with $du = -dx$ as well, the two negative cancel out and we get:\\
+$= \int_0^{\frac{\pi}{2}} \frac{sin^n(\frac{\pi}{2} - u)}{sin^n(\frac{\pi}{2} - u) + cos^n(\frac{\pi}{2} - u)} du$\\
+Using the trigonometric identity for angle addition and subtraction:\\
+$sin(x-y) = sinxcosy - cosxsiny$ and $cos(x-y) = cosxcosy + sinxsiny$ we get:\\
+$\int_0^{\frac{\pi}{2}} \frac{(sin\frac{\pi}{2}cosu - cos\frac{\pi}{2}sinu)^2}{(sin\frac{\pi}{2}cosu - cos\frac{\pi}{2}sinu)^n + (cos\frac{\pi}{2}cosu + sin\frac{\pi}{2}sinu)^n}du$, which simplifies to:\\
+$\int_0^{\frac{\pi}{2}} \frac{cos^nu}{cos^nu + sin^nu}du$\\~\\
+(ii/iii) Add the integral you obtain above to the original integral.\\
+Because the u can be any arbitrary variable, I am going to re-label u as x.\\
+Also, I am going to label the original integral as $I$.\\
+Therefore:\\
+$2I = \int_0^{\frac{\pi}{2}} \frac{cos^n(x)}{cos^n(x)+sin^n(x)} dx + \int_0^{\frac{\pi}{2}} \frac{sin^n(x)}{sin^n(x) + cos^n(x)}dx$\\
+$2I = \int_0^{\frac{\pi}{2}} \frac{sin^n(x) + cos^n(x)}{sin^n(x) + cos^n(x)dx}$\\
+$2I = \int_0^{\frac{\pi}{2}} 1 dx$\\
+$2I = \frac{\pi}{2}$\\
+$I = \frac{\pi}{4}$\\
+The original integral will always equal $\frac{\pi}{4}$ no matter what n is input.
 
 
 \end{document}  
