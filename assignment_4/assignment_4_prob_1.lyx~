@@ -1,0 +1,443 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Assignment 4: Problem 1
+\end_layout
+
+\begin_layout Author
+Michael Cai
+\end_layout
+
+\begin_layout Paragraph*
+1.
+ Consider the following integral 
+\begin_inset Formula $\int_{0}^{\pi}sin(t)$
+\end_inset
+
+
+\begin_inset Formula $dt$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subparagraph
+(a) Use the Trapezoidal Rule to estimate the integral using 
+\begin_inset Formula $n=4$
+\end_inset
+
+ subintervals.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Trapezoidal Rule states that given a certain number of subintervals,
+ in this case 4, you can estimate the value of an integral using the formula:
+ 
+\begin_inset Formula $T_{4}=\frac{\Delta x}{2}(y_{o}+2y_{1}+2y_{2}+2y_{3}+y_{4})$
+\end_inset
+
+ where 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ is equal to the integrand evaluated at the given 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ value that was calculated from the 
+\begin_inset Formula $\Delta x$
+\end_inset
+
+'s.
+ 
+\end_layout
+
+\begin_layout Standard
+In this case, 
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+ 
+\begin_inset Formula $x_{1}=\frac{\pi}{4}$
+\end_inset
+
+ 
+\begin_inset Formula $x_{2}=\frac{\pi}{2}$
+\end_inset
+
+ 
+\begin_inset Formula $x_{3}=\frac{3\pi}{4}$
+\end_inset
+
+ 
+\begin_inset Formula $x_{4}=\pi$
+\end_inset
+
+ and thus 
+\begin_inset Formula $y_{0}=0$
+\end_inset
+
+ 
+\begin_inset Formula $y_{1}=\frac{\sqrt{2}}{2}$
+\end_inset
+
+ 
+\begin_inset Formula $y_{2}=1$
+\end_inset
+
+ 
+\begin_inset Formula $y_{3}=\frac{\sqrt{2}}{2}$
+\end_inset
+
+ 
+\begin_inset Formula $y_{4}=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Therefore 
+\begin_inset Formula $T_{4}=\frac{\pi}{8}(y_{0}+2y_{1}+2y_{2}+2y_{3}+y_{4})=\frac{\pi}{8}(\sqrt{2}+2+\sqrt{2})\approx1.896119$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Subparagraph
+(b) Use Simpson's Rule to estimate the integral using 
+\begin_inset Formula $n=4$
+\end_inset
+
+ subintervals.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For Simpson's Rule we use the same x's and y's as in the Trapezoidal rule,
+ but the formula is slightly different.
+ 
+\begin_inset Formula $S_{4}=\frac{\Delta x}{3}(y_{0}+4y_{1}+2y_{2}+4y_{3}+y_{4})=\frac{\pi}{12}(2\sqrt{2}+2+2\sqrt{2})\approx2.004560$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subparagraph
+(c) Find an upper bound for the Error 
+\begin_inset Formula $|E_{T}|$
+\end_inset
+
+ and 
+\begin_inset Formula $|E_{S}|$
+\end_inset
+
+ for the Trapezoidal Rule and Simpson's Rule using 4 subintervals, respectively.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To find the upper bound of 
+\begin_inset Formula $|E_{T}|$
+\end_inset
+
+ we must use the formula 
+\begin_inset Formula $E_{T}=\frac{k(b-a)^{3}}{12n^{2}}$
+\end_inset
+
+where 
+\begin_inset Formula $|f''(x)|\leq k$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f'(t)=cos(t)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f''(t)=-sin(t)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The maximum value of 
+\begin_inset Formula $|f''(x)|=1$
+\end_inset
+
+ since the vertical bound of cosine and sine is 1, which indicates that
+ 
+\begin_inset Formula $k=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Therefore 
+\begin_inset Formula $|E_{T}|=\frac{\pi^{3}}{12(4^{2})}\approx0.161491$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The formula for 
+\begin_inset Formula $|E_{S}|=\frac{L(b-a)^{5}}{180n^{4}}$
+\end_inset
+
+ where 
+\begin_inset Formula $|f^{(4)}(x)|\leq L$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We have already calculated the first two derivatives of the integrand, so
+ the next two are: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f'''(t)=-cos(t)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f^{(4)}(t)=sin(t)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And by the same reasoning as in estimating the previous error bound, the
+ maximum of cosine and sine is 1, and thus 
+\begin_inset Formula $k=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Therefore 
+\begin_inset Formula $|E_{S}|=\frac{\pi^{5}}{180(4^{4})}\approx0.006641$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subparagraph
+(d) Evaluate the integral directly and find 
+\begin_inset Formula $|E_{T}|$
+\end_inset
+
+ and 
+\begin_inset Formula $|E_{S}|$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
