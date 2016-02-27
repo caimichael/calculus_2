@@ -1,0 +1,190 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Assignment 5 Problem Three
+\end_layout
+
+\begin_layout Author
+Michael Cai
+\end_layout
+
+\begin_layout Subparagraph
+3.
+ If the birth rate of a population is 
+\begin_inset Formula $b(t)=2200e^{0.0024t}$
+\end_inset
+
+ people per year and the death rate is 
+\begin_inset Formula $d(t)=1460e^{0.018t}$
+\end_inset
+
+ people per year, find the area between these curves for 
+\begin_inset Formula $0\leq t\leq10.$
+\end_inset
+
+ What does this area represent?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b(10)\approx2253.44$
+\end_inset
+
+ and 
+\begin_inset Formula $d(10)\approx1747.94$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because these are strictly increasing on this interval and because at 
+\begin_inset Formula $t=10$
+\end_inset
+
+, 
+\begin_inset Formula $b(10)>d(10)$
+\end_inset
+
+, this indicates that throughout the interval 
+\begin_inset Formula $b(t)>d(t)$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $d(t)$
+\end_inset
+
+ has a faster exponential growth rate than 
+\begin_inset Formula $b(t)$
+\end_inset
+
+ there will be a point when 
+\begin_inset Formula $d(t)$
+\end_inset
+
+ outpaces 
+\begin_inset Formula $b(t)$
+\end_inset
+
+, but since we've shown that 
+\begin_inset Formula $b(10)>d(10)$
+\end_inset
+
+ then we can conclude that the two functions have yet to intersect, and
+ that in this interval 
+\begin_inset Formula $b(t)$
+\end_inset
+
+ is larger than 
+\begin_inset Formula $d(t)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\int_{0}^{10}2200e^{0.0024t}-1460e^{0.018t}dt=2200\int_{0}^{10}e^{0.0024t}dt-1460\int_{0}^{10}e^{0.0018t}dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=2200[\frac{1}{1.0024}e^{1.0024t}]\bigg|_{0}^{10}-1460[\frac{1}{1.0018}e^{1.0018t}]\bigg|_{0}^{10}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=2200[\frac{1}{1.0024}e^{1.0024(10)}-\frac{1}{1.0024}e^{1.0024(0)}]-1460[\frac{1}{1.0018}e^{1.0018(10)}-\frac{1}{1.0018}e^{1.0018(0)}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

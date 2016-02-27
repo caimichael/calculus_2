@@ -1,0 +1,240 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Assignment 5 Problem One
+\end_layout
+
+\begin_layout Subparagraph
+1.
+ Find all the values of 
+\begin_inset Formula $p$
+\end_inset
+
+for which the integral 
+\begin_inset Formula $\int_{0}^{1}x^{p}ln(x)dx$
+\end_inset
+
+ converges.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\int_{0}^{1}x^{p}ln(x)dx=\lim_{b\to0^{+}}\int_{b}^{1}x^{p}ln(x)dx$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+First we use IBP, and let 
+\begin_inset Formula $u=ln(x)$
+\end_inset
+
+ and 
+\begin_inset Formula $du=\frac{1}{x}dx$
+\end_inset
+
+.
+ 
+\begin_inset Formula $dv=x^{p}dx$
+\end_inset
+
+ and 
+\begin_inset Formula $v=\frac{1}{p+1}x^{p+1}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\lim_{b\to0^{+}}\frac{1}{p+1}x^{p+1}ln(x)|_{b}^{1}-\frac{1}{p+1}\int_{b}^{1}x^{p}dx$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\lim_{b\to0^{+}}\frac{1}{p+1}[1^{p+1}ln(1)-b^{p+1}ln(b)]-\frac{1}{p+1}(\frac{1}{p+1}x^{p+1})|_{b}^{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $=\lim_{b\to0^{+}}\frac{1}{p+1}[1^{p+1}ln(1)-b^{p+1}ln(b)]-\frac{1}{(p+1)^{2}}[1^{p+1}-b^{p+1}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{1}{p+1}[-b^{p+1}ln(b)]-\frac{1}{(p+1)^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because the 
+\begin_inset Formula $\lim_{b\to0^{+}}$
+\end_inset
+
+ 
+\begin_inset Formula $-b^{p+1}$
+\end_inset
+
+ grows toward 0 and 
+\begin_inset Formula $ln(b)$
+\end_inset
+
+ grows toward 
+\begin_inset Formula $-\infty$
+\end_inset
+
+.
+ Because we have an indeterminant form, we must use L'Hospitals Rule.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $-b^{p+1}ln(b)=-\frac{ln(b)}{b^{-p-1}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{\frac{1}{b}}{(-p-1)b^{-p-2}}=\frac{1}{(-p-1)b^{-p-1}}=\frac{b^{p+1}}{-p-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Now to plug this back into the original equation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{b\to0^{+}}\frac{1}{p+1}[-b^{p+1}ln(b)]-\frac{1}{(p+1)^{2}}=\lim_{b\to0^{+}}\frac{b^{p+1}}{-p-1}-\frac{1}{(p+1)^{2}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Therefore for this integral to converge, 
+\begin_inset Formula $p>-1$
+\end_inset
+
+ so that there will be no 0's in the denominators of the two separate terms,
+ and so that 
+\end_layout
+
+\end_body
+\end_document
