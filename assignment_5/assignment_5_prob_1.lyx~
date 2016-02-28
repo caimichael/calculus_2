@@ -177,7 +177,7 @@ First we use IBP, and let
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=\frac{1}{p+1}[-b^{p+1}ln(b)]-\frac{1}{(p+1)^{2}}$
+\begin_inset Formula $=\frac{1}{p+1}[-b^{p+1}ln(b)]-\frac{1}{(p+1)^{2}}-\frac{b^{p+1}}{(p+1)^{2}}$
 \end_inset
 
 
@@ -201,7 +201,7 @@ Because the
 \end_inset
 
 .
- Because we have an indeterminant form, we must use L'Hospitals Rule.
+ Because we have an indeterminate form, we must use L'Hospitals Rule.
 \end_layout
 
 \begin_layout Standard

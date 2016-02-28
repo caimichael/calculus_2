@@ -177,7 +177,7 @@ First we use IBP, and let
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=\frac{1}{p+1}[-b^{p+1}ln(b)]-\frac{1}{(p+1)^{2}}$
+\begin_inset Formula $=\frac{1}{p+1}[-b^{p+1}ln(b)]-\frac{1}{(p+1)^{2}}-\frac{b^{p+1}}{(p+1)^{2}}$
 \end_inset
 
 
@@ -212,7 +212,7 @@ Because the
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=\frac{\frac{1}{b}}{(-p-1)b^{-p-2}}=\frac{1}{(-p-1)b^{-p-1}}=\frac{b^{p+1}}{-p-1}$
+\begin_inset Formula $=-\frac{\frac{1}{b}}{(-p-1)b^{-p-2}}=-\frac{1}{(-p-1)b^{-p-1}}=\frac{b^{p+1}}{p+1}$
 \end_inset
 
  
@@ -223,7 +223,7 @@ Now to plug this back into the original equation:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\lim_{b\to0^{+}}\frac{1}{p+1}[-b^{p+1}ln(b)]-\frac{1}{(p+1)^{2}}=\lim_{b\to0^{+}}\frac{b^{p+1}}{-p-1}-\frac{1}{(p+1)^{2}}$
+\begin_inset Formula $\lim_{b\to0^{+}}\frac{1}{p+1}[-b^{p+1}ln(b)]-\frac{1}{(p+1)^{2}}=\lim_{b\to0^{+}}\frac{b^{p+1}}{p+1}-\frac{1}{(p+1)^{2}}$
 \end_inset
 
  
