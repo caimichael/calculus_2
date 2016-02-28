@@ -319,7 +319,7 @@ Using the same u-substitution as we used in the previous problem, we get
 \end_inset
 
  which thus equals 
-\begin_inset Formula $\infty.$
+\begin_inset Formula $-\infty.$
 \end_inset
 
  
@@ -327,7 +327,7 @@ Using the same u-substitution as we used in the previous problem, we get
 
 \begin_layout Standard
 Therefore the 
-\begin_inset Formula $\lim_{b\to\infty}\int_{-b}^{b}\frac{2x}{x^{2}+1}dx=\infty-\infty$
+\begin_inset Formula $\lim_{b\to\infty}\int_{-b}^{b}\frac{2x}{x^{2}+1}dx=\infty-(-\infty)$
 \end_inset
 
 , which is still divergent.

@@ -386,53 +386,19 @@ status open
 \end_layout
 
 \begin_layout Standard
-According to the Definition of an Improper Integral of Type 1, part (c)
+Yes, this statement is true for all continuous functions because of the
+ definition of a limit.
+ 
 \end_layout
 
 \begin_layout Standard
-If both 
-\begin_inset Formula $\int_{a}^{\infty}f(x)dx$
+If the limit, which is the approximation of a finite number, b, as it approaches
+ an infinite value, 
+\begin_inset Formula $\infty,$
 \end_inset
 
- and 
-\begin_inset Formula $\int_{-\infty}^{a}f(x)dx$
-\end_inset
-
- are convergent, then we define:
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$$
-\backslash
-int_{-
-\backslash
-infty}^
-\backslash
-infty f(x)dx = 
-\backslash
-int_{-
-\backslash
-infty}^a f(x)dx + 
-\backslash
-int_a^{
-\backslash
-infty} f(x)dx$$
-\end_layout
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Furthermore, if the limit does not exist as a finite number when calculating
- the component integrals, then the total improper integral must also be
- divergent.
+ exists then the improper integral is convergent, but if the limit does
+ not exist as a finite number then the improper integral is divergent.
 \end_layout
 
 \end_body

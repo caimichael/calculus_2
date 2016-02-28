@@ -239,10 +239,27 @@ To solve an integral which has the bounds
 
 , each of the separate components of the integral when split into the pieces
  
-\begin_inset Formula $\int_{-\infty}$
+\begin_inset Formula $\int_{-\infty}^{0}$
 \end_inset
 
+and 
+\begin_inset Formula $\int_{0}^{\infty}$
+\end_inset
 
+must be separately convergent.
+ 
+\end_layout
+
+\begin_layout Standard
+Because we have already checked 
+\begin_inset Formula $\int_{0}^{\infty}$
+\end_inset
+
+ and found it to be divergent, then we can conclude that the two-sided 
+\begin_inset Formula $[-\infty,\infty]$
+\end_inset
+
+ integral must also be divergent.
 \end_layout
 
 \begin_layout Subparagraph
@@ -266,6 +283,54 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+We have already solved for the portion, 
+\begin_inset Formula $\lim_{b\to\infty}\int_{0}^{b}\frac{2x}{x^{2}+1}dx$
+\end_inset
+
+, so now we just need to solve for the portion from the bound 
+\begin_inset Formula $-\infty$
+\end_inset
+
+ to 0.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{b\to-\infty}\int_{b}^{0}\frac{2x}{x^{2}+1}dx$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Using the same u-substitution as we used in the previous problem, we get
+ the answer:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=ln|u|\bigg|_{b^{2}+1}^{1}=ln|1|-ln|b^{2}+1|=-ln|b^{2}+1|$
+\end_inset
+
+ as b approaches 
+\begin_inset Formula $-\infty,$
+\end_inset
+
+ which thus equals 
+\begin_inset Formula $-\infty.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Therefore the 
+\begin_inset Formula $\lim_{b\to\infty}\int_{-b}^{b}\frac{2x}{x^{2}+1}dx=\infty-\infty$
+\end_inset
+
+, which is still divergent.
 \end_layout
 
 \begin_layout Subparagraph
@@ -318,6 +383,22 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Yes, this statement is true for all continuous functions because of the
+ definition of a limit.
+ 
+\end_layout
+
+\begin_layout Standard
+If the limit, which is the approximation of a finite number, b, as it approaches
+ an infinite value, 
+\begin_inset Formula $\infty,$
+\end_inset
+
+ exists then the improper integral is convergent, but if the limit does
+ not exist as a finite number then the improper integral is divergent.
 \end_layout
 
 \end_body
