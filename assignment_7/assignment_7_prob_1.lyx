@@ -1,0 +1,254 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Assignment 7 Problem One
+\end_layout
+
+\begin_layout Author
+Michael Cai
+\end_layout
+
+\begin_layout Subparagraph
+1.
+ A bead is formed from a sphere of radius 5 by drilling through a diameter
+ of the sphere with a drill bit of radius 3.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(a) Find the volume of the bead.
+\end_layout
+
+\begin_layout Standard
+The volume of the bead will be the volume of a sphere subtracting the volume
+ portion of the removed portion, which amounts to a cylindrical portion
+ extending from (if you were to make the sphere a 2-dimensional circle on
+ an xy-plane) y=-3 to 3, and two circular 
+\begin_inset Quotes eld
+\end_inset
+
+caps
+\begin_inset Quotes erd
+\end_inset
+
+ that extend on the same plane from y=-5 to -3 and y = 3 to 5.
+ 
+\end_layout
+
+\begin_layout Standard
+Thus the equation is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V=\frac{4}{3}\pi r^{3}-2$
+\end_inset
+
+ (Removed portion)
+\end_layout
+
+\begin_layout Standard
+Let's break this into two parts.
+\end_layout
+
+\begin_layout Standard
+The volume of the cylindrical portion is just the integral of cross-sections
+ perpendicular to the y-axis of circles all of equal area 
+\begin_inset Formula $\pi r^{2}$
+\end_inset
+
+ where 
+\begin_inset Formula $r=3$
+\end_inset
+
+ thus the circles are of area 
+\begin_inset Formula $9\pi.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+To find the volume of the 
+\begin_inset Quotes eld
+\end_inset
+
+cap
+\begin_inset Quotes erd
+\end_inset
+
+, we first must imagine the graph of a circle of radius = 5 on an xy-plane.
+ 
+\end_layout
+
+\begin_layout Standard
+The cap is the portion of the function 
+\begin_inset Formula $x=\sqrt{25-y^{2}}$
+\end_inset
+
+ from the bounds 
+\begin_inset Formula $y=3$
+\end_inset
+
+ to 
+\begin_inset Formula $y=5$
+\end_inset
+
+ revolved about the 
+\begin_inset Formula $y$
+\end_inset
+
+-axis.
+ 
+\end_layout
+
+\begin_layout Standard
+I calculate the volume of this solid of revolution by using the disk method,
+ which states that the volume, 
+\begin_inset Formula $V=\int_{3}^{5}A(y)dy$
+\end_inset
+
+ where 
+\begin_inset Formula $A(y)$
+\end_inset
+
+ is the area of each of the circular cross-sections.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A(y)=\pi r^{2}=\pi(\sqrt{25-y^{2}})^{2}=\pi(25-y^{2})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Thus the total volume of the bead is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V=\frac{4}{3}\pi(5)^{3}-2(\int_{0}^{3}\pi(3)^{2}dy+\int_{3}^{5}\pi(25-y^{2})dy)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{500\pi}{3}-2(27\pi+\frac{52\pi}{3})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{234\pi}{3}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Find the volume of the removed portion of the sphere
+\end_layout
+
+\begin_layout Standard
+As calculated previously the volume of the removed portion of the sphere
+ would just be the volume of the sphere subtracting the volume of the bead:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V=\frac{500\pi}{3}-\frac{234\pi}{3}=\frac{266\pi}{3}$
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document
