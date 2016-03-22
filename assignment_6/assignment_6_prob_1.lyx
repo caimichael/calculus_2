@@ -1,0 +1,226 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Assignment 6 Problem One
+\end_layout
+
+\begin_layout Author
+Michael Cai
+\end_layout
+
+\begin_layout Subparagraph
+1.
+ Find the volume of the following solid.
+ The solid lies between planes perpendicular to the 
+\begin_inset Formula $x$
+\end_inset
+
+-axis at 
+\begin_inset Formula $x=-1$
+\end_inset
+
+ and 
+\begin_inset Formula $x=1$
+\end_inset
+
+.
+ The cross sections perpendicular to the 
+\begin_inset Formula $x$
+\end_inset
+
+-axis are circular disks whose diameters run from the parabola 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+to the parabola 
+\begin_inset Formula $y=2-x^{2}$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The shape that is formed by this description is a lemon-shaped object that
+ is bounded by the two planes perpendicular to the 
+\begin_inset Formula $x$
+\end_inset
+
+-axis at 
+\begin_inset Formula $x=-1$
+\end_inset
+
+ and 
+\begin_inset Formula $x=1$
+\end_inset
+
+.
+ Because the cross-sections are circular disks, we have to calculate the
+ area of the disks and to do that we must find the radius.
+ Because the curves 
+\begin_inset Formula $y=x^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $y=2-x^{2}$
+\end_inset
+
+ intersect at 
+\begin_inset Formula $y=1$
+\end_inset
+
+ when 
+\begin_inset Formula $x=-1$
+\end_inset
+
+ and 
+\begin_inset Formula $x=1$
+\end_inset
+
+, we know that the line 
+\begin_inset Formula $y=1$
+\end_inset
+
+ slices the shape into two perfect halves.
+ Thus the radius of one of the disks can be calculated by subtracting 1
+ from the top curve 
+\begin_inset Formula $y=2-x^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $r=1-x^{2}$
+\end_inset
+
+.
+ The volume formula we will use is 
+\begin_inset Formula $\int A(x)dx$
+\end_inset
+
+, where 
+\begin_inset Formula $A(x)=\pi r^{2}$
+\end_inset
+
+ because the cross sections are circular disks, which run perpendicular
+ to the 
+\begin_inset Formula $x$
+\end_inset
+
+-axis.
+ Thus for calculating the volume of the shape, we have 
+\begin_inset Formula $\int_{-1}^{1}A(x)dx=\int_{-1}^{1}\pi r^{2}dx=\int_{-1}^{1}\pi(1-x^{2})dx=\pi\int_{-1}^{1}1-2x^{2}+x^{4}dx.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\pi[x-\frac{2}{3}x^{3}+\frac{1}{5}x^{5}]\bigg|_{-1}^{1}=\pi[1-\frac{2}{3}(1)+\frac{1}{5}(1)-(-1-\frac{2}{3}(-1)+\frac{1}{5}(-1)]=\frac{16\pi}{15}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Therefore the volume of the following solid is equal to 
+\begin_inset Formula $\frac{16\pi}{15}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_body
+\end_document
