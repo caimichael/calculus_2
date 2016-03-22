@@ -192,7 +192,7 @@ The cap is the portion of the function
 \begin_layout Standard
 I calculate the volume of this solid of revolution by using the disk method,
  which states that the volume, 
-\begin_inset Formula $V=\int_{3}^{5}A(y)dy$
+\begin_inset Formula $V=\int_{4}^{5}A(y)dy$
 \end_inset
 
  where 
@@ -214,21 +214,21 @@ Thus the total volume of the bead is equal to:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $V=\frac{4}{3}\pi(5)^{3}-2(\int_{0}^{3}\pi(3)^{2}dy+\int_{3}^{5}\pi(25-y^{2})dy)$
+\begin_inset Formula $V=\frac{4}{3}\pi(5)^{3}-2(\int_{0}^{4}\pi(3)^{2}dy+\int_{4}^{5}\pi(25-y^{2})dy)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=\frac{500\pi}{3}-2(27\pi+\frac{52\pi}{3})$
+\begin_inset Formula $=\frac{500\pi}{3}-2(36\pi+\frac{14\pi}{3})$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=\frac{234\pi}{3}$
+\begin_inset Formula $=\frac{256\pi}{3}$
 \end_inset
 
  
@@ -244,7 +244,7 @@ As calculated previously the volume of the removed portion of the sphere
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $V=\frac{500\pi}{3}-\frac{234\pi}{3}=\frac{266\pi}{3}$
+\begin_inset Formula $V=\frac{500\pi}{3}-\frac{256\pi}{3}=\frac{244\pi}{3}$
 \end_inset
 
  

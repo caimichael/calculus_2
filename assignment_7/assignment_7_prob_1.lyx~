@@ -86,6 +86,21 @@ Michael Cai
  A bead is formed from a sphere of radius 5 by drilling through a diameter
  of the sphere with a drill bit of radius 3.
  
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

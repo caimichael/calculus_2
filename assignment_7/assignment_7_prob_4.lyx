@@ -211,14 +211,94 @@ Thus we must calculate the point in time when the arc man is twice as far
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\frac{2}{3}(b+1)^{\frac{2}{3}}-\frac{2}{3}=2b$
+\begin_inset Formula $\frac{2}{3}(b+1)^{\frac{3}{2}}-\frac{2}{3}=2b$
 \end_inset
 
  
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\frac{1}{3}(b+1)^{\frac{2}{3}}-\frac{1}{3}=b$
+\begin_inset Formula $\frac{1}{3}(b+1)^{\frac{3}{2}}-\frac{1}{3}=b$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{1}{3}(b+1)^{\frac{3}{2}}=b+\frac{1}{3}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(b+1)^{\frac{3}{2}}=3b+1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(b+1)^{3}=(3b+1)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you expand the factorization and set the polynomial equal to zero you
+ get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x^{3}-6x^{2}-3x=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x(x^{2}-6x-3)=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Using the quadratic formula to solve for the roots of the quadratic term:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x=\frac{6\pm\sqrt{6^{2}-4(1)(-3)}}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x=\frac{6\pm\sqrt{48}}{2}=\frac{6\pm4\sqrt{3}}{2}=3\pm2\sqrt{3}$
+\end_inset
+
+ , but since 
+\begin_inset Formula $3-2\sqrt{3}$
+\end_inset
+
+ is negative, which would not make sense in the context of the problem,
+ the two roots that we get are 
+\begin_inset Formula $x=0$
+\end_inset
+
+ and 
+\begin_inset Formula $x=3+2\sqrt{3}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Thus, the point at which the person walking along the arc has walked double
+ the distance as the one walking along the axis will be 
+\begin_inset Formula $x=3+2\sqrt{3}.$
 \end_inset
 
  
