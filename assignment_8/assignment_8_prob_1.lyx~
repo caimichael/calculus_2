@@ -1,0 +1,372 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Assignment 8 Problem 1
+\end_layout
+
+\begin_layout Author
+Michael Cai
+\end_layout
+
+\begin_layout Subparagraph*
+1a) Find the total volume of the flask.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\int_{-1}^{0}\pi(1-y^{2})dy+\int_{0}^{2}\pi(\frac{3}{8}cos(\frac{\pi y}{2})+\frac{5}{8})^{2}dy+\int_{2}^{4}\pi(\frac{1}{2})^{2}dy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's consider each portion of this equation as portions 1, 2, and 3 respectivel
+y.
+ We will sum them all up in the end.
+\end_layout
+
+\begin_layout Standard
+Portion 1:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\pi\int_{-1}^{0}1-y^{2}dy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\pi[y-\frac{1}{3}y^{3}]\bigg|_{-1}^{0}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\pi[-1-\frac{1}{3}(-1)^{3}]=\frac{2\pi}{3}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Portion 2:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\pi\int_{0}^{2}(\frac{3}{8}cos(\frac{\pi y}{2})+\frac{5}{8})^{2}dy$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\pi\int_{0}^{2}\frac{9}{64}cos^{2}(\frac{\pi y}{2})+2(\frac{5}{8})(\frac{3}{8}cos(\frac{\pi y}{2}))+\frac{25}{64}dy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{9\pi}{64}\int_{0}^{2}cos^{2}(\frac{\pi y}{2})dy+\frac{15\pi}{32}\int_{0}^{2}cos(\frac{\pi y}{2})dy+\pi\int_{0}^{2}\frac{25}{64}dy$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The u-substitution that we will use on the first two components will be
+ the same:
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $u=\frac{\pi y}{2}$
+\end_inset
+
+ and thus 
+\begin_inset Formula $du=\frac{\pi}{2}dy$
+\end_inset
+
+, and the limits will (upper and lower) will equal 
+\begin_inset Formula $\pi$
+\end_inset
+
+ and 0 respectively.
+\end_layout
+
+\begin_layout Standard
+Thus:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{18}{64}\int_{0}^{\pi}cos^{2}(u)du+\frac{30}{32}\int_{0}^{\pi}cos(u)du+\pi\int_{0}^{2}\frac{25}{64}dy$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Through the use of the half-angle formula to reduce the first term and all
+ terms evaluated we get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{18}{64}[\frac{\pi}{2}]+0+\frac{25}{32}[\pi]=\frac{59\pi}{64}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Portion 3:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\pi\int_{2}^{4}(\frac{1}{2})^{2}dy=\frac{\pi}{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Thus the total volume of the flask equals:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{2\pi}{3}+\frac{59\pi}{64}+\frac{\pi}{2}=\frac{401\pi}{192}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subparagraph
+1b) Write the integral that represents work necessary to empty the flask.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W=\int_{-1}^{4}\rho\pi x^{2}(4-y)dy$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Where x represents:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x=$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\{\sqrt{1-y^{2}}$
+\end_inset
+
+ from 
+\begin_inset Formula $-1\leq y<0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\{\frac{3}{8}cos(\frac{\pi y}{2})+\frac{5}{8}$
+\end_inset
+
+ from 
+\begin_inset Formula $0\leq y<2$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\{\frac{1}{4}$
+\end_inset
+
+ from 
+\begin_inset Formula $2\leq y\leq4$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subparagraph
+1c) Use Simpson's rule with n=10 to approximate the value of the integral
+ in part b.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Delta y=\frac{4-(-1)}{10}=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{0}=-1,y_{1}=-\frac{1}{2}$
+\end_inset
+
+ ...
+ 
+\begin_inset Formula $y_{9}=\frac{7}{2},y_{10}=4$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{10}=\frac{1}{6}(f(y_{0})+4f(y_{1})+2f(y_{2})...4f(y_{9})+f(y_{10}))$
+\end_inset
+
+ where 
+\begin_inset Formula $f(y)=\rho\pi x^{2}$
+\end_inset
+
+ where 
+\begin_inset Formula $x$
+\end_inset
+
+ represents different 
+\begin_inset Formula $f(y)$
+\end_inset
+
+ depending on the interval.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{10}\approx5.383250\rho$
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document
