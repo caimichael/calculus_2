@@ -1,0 +1,214 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Assignment 9 Problem Three
+\end_layout
+
+\begin_layout Author
+Michael Cai
+\end_layout
+
+\begin_layout Subparagraph
+3.
+ For each of the following series, write out the first few terms of each
+ series to show how the series starts.
+ Then, find the sum of the series.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(a)
+\begin_inset Formula $\Sigma_{n=2}^{\infty}\frac{1}{4^{n}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{n}=\bigg\{\frac{1}{16},\frac{1}{64},\frac{1}{256},...\bigg\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $s_{n}=\Sigma ar^{k}=\Sigma_{n=0}^{\infty}(\frac{1}{16})(\frac{1}{4})^{n}=\frac{\frac{1}{16}}{1-\frac{1}{4}}=\frac{1}{12}$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(b)
+\begin_inset Formula $\Sigma_{n=0}^{\infty}(\frac{1}{2^{n}}+\frac{(-1)^{n}}{5^{n}})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{n}=\bigg\{2,\frac{3}{10},\frac{29}{100},\frac{117}{1000},...\bigg\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+First we will split the series up into two separate series and sum the separate
+ parts.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\Sigma_{n=0}^{\infty}\frac{1}{2^{n}}+\Sigma_{n=0}^{\infty}\frac{(-1)^{n}}{5^{n}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Note that the series 
+\begin_inset Formula $\Sigma_{n=0}^{\infty}\frac{(-1)^{n}}{5^{n}}$
+\end_inset
+
+ is of the form 
+\begin_inset Formula $\bigg\{1,-\frac{1}{5},\frac{1}{25},-\frac{1}{125},...\bigg\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Which could also be written as 
+\begin_inset Formula $\Sigma_{n=0}^{\infty}(\frac{1}{25})^{n}-\Sigma_{n=0}^{\infty}(-\frac{1}{5})(\frac{1}{25})^{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Thus evaluating all 3 geometric series together we have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{1}{1-\frac{1}{2}}+\frac{1}{1-\frac{1}{25}}-\frac{\frac{1}{5}}{1-\frac{1}{25}}=2+\frac{25}{24}-\frac{5}{24}=\frac{17}{6}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+*Realized I did this in an overly complicated way initially.
+ Can be simplified to just:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{1}{1-\frac{1}{2}}+\frac{1}{1-(-\frac{1}{5})}=2+\frac{5}{6}=\frac{17}{6}$
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document
