@@ -1,0 +1,450 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Assignment 10 Problem 4
+\end_layout
+
+\begin_layout Author
+Michael Cai
+\end_layout
+
+\begin_layout Subparagraph
+4.
+ Determine whether the following series converge or diverge.
+ You may use any test that you find appropriate (ratio test, comparison
+ test, alternating series test, limit comparison test, root test, integral
+ test.)
+\end_layout
+
+\begin_layout Standard
+(a) 
+\begin_inset Formula $\Sigma_{n=1}^{\infty}\frac{(2n)!}{n!(n+1)!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the Ratio Test:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{n\rightarrow\infty}\Bigg|\frac{a_{n+1}}{a_{n}}\bigg|=\frac{\frac{(2(n+1))!}{(n+1)!(n+2)!}}{\frac{(2n)!}{n!(n+1)!}}=\frac{n!(n+1)!}{(n+1)!(n+2)!}\times\frac{(2n+2)!}{(2n)!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{n!}{(n+2)!}\times\frac{(2n+2)!}{(2n)!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By the properties that factorials have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(n+2)!=n!(n+1)(n+2)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(2n+2)!=(2n)!(2n+1)(2n+2)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus the original equation factors to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{n!}{n!(n+1)(n+2)}\times\frac{(2n)!(2n+1)(2n+2)}{(2n)!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{1}{(n+1)(n+2)}\times\frac{(2n+1)(2n+2)}{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{(2n+1)(2n+2)}{(n+1)(n+2)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{4n^{2}+6n+2}{n^{2}+3n+3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because we have taken the limit, the fraction is in indeterminate form.
+ Thus we apply L'Hospital's Rule (denoted 
+\begin_inset Formula $L^{x}()$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L'(\frac{4n^{2}+6n+2}{n^{2}+3n+3})=\frac{8n+6}{2n+3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L''=\frac{8}{2}=4>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because the 
+\begin_inset Formula $r$
+\end_inset
+
+ is greater than 1 the series diverges.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) 
+\begin_inset Formula $\Sigma_{n=1}^{\infty}\frac{(-1)^{n-1}}{n^{2}+2n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This series is similar in form to 
+\begin_inset Formula $\frac{1}{n^{2}}$
+\end_inset
+
+ so I will prove that it converges absolutely by using the Limit Comparison
+ Test.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $a_{n}=\frac{1}{n^{2}}$
+\end_inset
+
+ and 
+\begin_inset Formula $b_{n}=\frac{1}{n^{2}+2n+1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{\frac{1}{n^{2}}}{\frac{1}{n^{2}+2n+1}}=\frac{n^{2}+2n+1}{n^{2}}=1+\frac{2n}{n^{2}}+\frac{1}{n^{2}}=1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Thus because the limit is between 0 and infinity, 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ must both converge or diverge.
+\end_layout
+
+\begin_layout Standard
+Because we know that 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ converges by the p-test for series, then 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ must converge.
+\end_layout
+
+\begin_layout Standard
+Therefore the original series converges absolutely.
+\end_layout
+
+\begin_layout Standard
+(c) 
+\begin_inset Formula $\Sigma_{n=1}^{\infty}(1+\frac{1}{n})^{n^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For a series 
+\begin_inset Formula $\Sigma a_{n}$
+\end_inset
+
+ to converge the 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}$
+\end_inset
+
+ must equal 0.
+ 
+\end_layout
+
+\begin_layout Standard
+If we observe the exponentiated portion of the series 
+\begin_inset Formula $1+\frac{1}{n}$
+\end_inset
+
+ will always be strictly greater than 1 for 
+\begin_inset Formula $n\geq1.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Thus the quantity being exponentiated, let's call it 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, will always be strictly greater than 1 for 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ and will equal 1 at the limit.
+ 
+\end_layout
+
+\begin_layout Standard
+Because 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ the exponent term 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+ will be a positive, increasing quantity.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{n\rightarrow\infty}\gamma\rightarrow1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{n\rightarrow\infty}\gamma^{n^{2}}\rightarrow1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because the sequence 
+\begin_inset Formula $\lim a_{n\rightarrow\infty}\neq0\implies\Sigma a_{n}$
+\end_inset
+
+ does not converge.
+ 
+\end_layout
+
+\begin_layout Standard
+(d) 
+\begin_inset Formula $\Sigma_{n=1}^{\infty}(\frac{1}{2n-1}-\frac{1}{2n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\Sigma_{n=1}^{\infty}(\frac{2n}{2n(2n-1)}-\frac{2n-1}{(2n-1)(2n)})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\Sigma_{n=1}^{\infty}\frac{-1}{4n^{2}-2n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For ease of convergence proofing purposes I multiply by the constant 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\Sigma_{n=1}^{\infty}\frac{1}{4n^{2}-2n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I will use the Limit Comparison Test to prove convergence:
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $a_{n}=\frac{1}{n^{2}}$
+\end_inset
+
+ and 
+\begin_inset Formula $b_{n}=\frac{1}{4n^{2}-2n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{a_{n}}{b_{n}}=\frac{\frac{1}{n^{2}}}{\frac{1}{4n^{2}-2n}}=\frac{4n^{2}-2n}{n^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using L'Hospitals:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L'(\frac{4n^{2}-2n}{n^{2}})=\frac{8n-2}{2n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L''=\frac{8}{2}=4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because this is a constant between 0 and infinity, then both 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ must converge or diverge.
+\end_layout
+
+\begin_layout Standard
+Because 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ converges by the p-test for series, 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ must also converge.
+\end_layout
+
+\end_body
+\end_document
