@@ -74,7 +74,7 @@
 \begin_body
 
 \begin_layout Title
-Assignment 8 Problem 3
+Assignment 12 Problem Two
 \end_layout
 
 \begin_layout Author
@@ -82,148 +82,116 @@ Michael Cai
 \end_layout
 
 \begin_layout Subparagraph*
-3.
- Match the slope fields in Figure 1 with their differential equations.
- Briefly explain/justify your choice of slope field.
-\begin_inset ERT
-status open
+2.
+ Use a power series to approximate the definite integral 
+\begin_inset Formula $\int_{0}^{0.4}ln(1+x^{4})$
+\end_inset
 
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
+ to six decimal places.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $f(x)=ln(1+x^{4})$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-(a) 
-\begin_inset Formula $y'=-y$
+\begin_inset Formula $f'(x)=\frac{4x^{3}}{1+x^{4}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-(b) 
-\begin_inset Formula $y'=y$
+First we try 
+\begin_inset Formula $\frac{1}{1+x^{4}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-(c) 
-\begin_inset Formula $y'=x$
+\begin_inset Formula $\frac{1}{1+x^{4}}=\frac{1}{1-(-x^{4})}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-(d) 
-\begin_inset Formula $y'=\frac{1}{y}$
+\begin_inset Formula $=\Sigma_{n=0}^{\infty}(-x^{4})^{n}=\Sigma(-1)^{n}x^{4n}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-(e) 
-\begin_inset Formula $y'=y^{2}$
+Thus, 
+\begin_inset Formula $f'(x)=4x^{3}\Sigma(-1)^{n}x^{4n}=\Sigma4(-1)^{n}x^{4n+3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Integrating to solve for 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ we get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(x)=ln(1+x^{4})=\int\Sigma_{n=0}^{\infty}4(-1)^{n}x^{4n+3}=\Sigma_{n=0}^{\infty}4(-1)^{n}\frac{x^{4n+4}}{4n+4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We integrate one final time to get the original problem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\int_{0}^{0.4}ln(1+x^{4})=\int_{0}^{0.4}\Sigma_{n=0}^{\infty}4(-1)^{n}\frac{x^{4n+4}}{4n+4}=\Sigma_{n=0}^{\infty}4(-1)^{n}\frac{x^{4n+5}}{(4n+4)(4n+5)}\bigg|_{0}^{0.4}=\Sigma_{n=0}^{\infty}4(-1)^{n}\frac{0.4^{4n+5}}{(4n+4)(4n+5)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To make the estimation we use the Alternating Series Estimation technique,
+ which demonstrates intuitively that the partial sums of terms in an alternating
+ series can provide arbitrarily good estimations of the true sum (or in
+ this case the true value of the integral).
+ 
+\end_layout
+
+\begin_layout Standard
+For this particular estimation because of the rapid growth in the denominator
+ due to the exponential term multiplied by the polynomial term, the estimation
+ converges quickly at 
+\begin_inset Formula $n=2$
+\end_inset
+
+ the terms being added are already within our error bound.
+\end_layout
+
+\begin_layout Standard
+At 
+\begin_inset Formula $n=2$
 \end_inset
 
  
 \end_layout
 
 \begin_layout Standard
-Slope field I corresponds to equation b).
- I was able to identify this by observing a few of the y-coordinates.
- For example, as the y-coordinates increase from 
-\begin_inset Formula $y=0$
+\begin_inset Formula $\Sigma_{n=0}^{2}4(-1)^{n}\frac{0.4^{4n+5}}{(4n+4)(4n+5)}=0.00203361$
 \end_inset
 
-, 
-\begin_inset Formula $y'$
-\end_inset
-
- becomes increasingly positive, and vice versa as the y-coordinates decrease
- from 
-\begin_inset Formula $y=0.$
-\end_inset
-
- Thus with a positive proportional relationship, the slope field must correspond
- to 
-\begin_inset Formula $y'=y.$
-\end_inset
-
+, which is within 0.000001 of the true value of the integral.
  
-\end_layout
-
-\begin_layout Standard
-Slope field II corresponds to equation a).
- There is an exact opposite effect of increasing and decreasing y-coordinates
- from the point 
-\begin_inset Formula $y=0$
-\end_inset
-
- from Slope field I, and thus I concluded that 
-\begin_inset Formula $y'=-y$
-\end_inset
-
- since the multiplicative inverse indicates the opposite behavior of 
-\begin_inset Formula $y'$
-\end_inset
-
- given 
-\begin_inset Formula $y$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Slope field III corresponds to d).
- If you observe the y-coordinates increasing, you will see that 
-\begin_inset Formula $y'$
-\end_inset
-
- starts off high but gradually decreases as 
-\begin_inset Formula $y$
-\end_inset
-
- increases (however never becoming negative).
- This is consistent with the definition 
-\begin_inset Formula $y'=\frac{1}{y}$
-\end_inset
-
-, where the smaller the value of 
-\begin_inset Formula $y$
-\end_inset
-
- (if 
-\begin_inset Formula $y$
-\end_inset
-
- is positive that is) the larger the value of 
-\begin_inset Formula $y'$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Slope field IV corresponds to e).
- Again there is a similar comparison to Slope field III in that instead
- of 
 \end_layout
 
 \end_body

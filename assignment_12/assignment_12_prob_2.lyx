@@ -74,18 +74,20 @@
 \begin_body
 
 \begin_layout Title
-Assignment 9 Problem Three
+Assignment 12 Problem Two
 \end_layout
 
 \begin_layout Author
 Michael Cai
 \end_layout
 
-\begin_layout Subparagraph
-3.
- For each of the following series, write out the first few terms of each
- series to show how the series starts.
- Then, find the sum of the series.
+\begin_layout Subparagraph*
+2.
+ Use a power series to approximate the definite integral 
+\begin_inset Formula $\int_{0}^{0.4}ln(1+x^{4})$
+\end_inset
+
+ to six decimal places.
 \begin_inset ERT
 status open
 
@@ -104,101 +106,107 @@ status open
 \end_layout
 
 \begin_layout Standard
-(a)
-\begin_inset Formula $\Sigma_{n=2}^{\infty}\frac{1}{4^{n}}$
+\begin_inset Formula $f(x)=ln(1+x^{4})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f'(x)=\frac{4x^{3}}{1+x^{4}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First we try 
+\begin_inset Formula $\frac{1}{1+x^{4}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{1}{1+x^{4}}=\frac{1}{1-(-x^{4})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\Sigma_{n=0}^{\infty}(-x^{4})^{n}=\Sigma(-1)^{n}x^{4n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus, 
+\begin_inset Formula $f'(x)=4x^{3}\Sigma(-1)^{n}x^{4n}=\Sigma4(-1)^{n}x^{4n+3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Integrating to solve for 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ we get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(x)=ln(1+x^{4})=\int\Sigma_{n=0}^{\infty}4(-1)^{n}x^{4n+3}=\Sigma_{n=0}^{\infty}4(-1)^{n}\frac{x^{4n+4}}{4n+4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We integrate one final time to get the original problem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\int_{0}^{0.4}ln(1+x^{4})=\int_{0}^{0.4}\Sigma_{n=0}^{\infty}4(-1)^{n}\frac{x^{4n+4}}{4n+4}=\Sigma_{n=0}^{\infty}4(-1)^{n}\frac{x^{4n+5}}{(4n+4)(4n+5)}\bigg|_{0}^{0.4}=\Sigma_{n=0}^{\infty}4(-1)^{n}\frac{0.4^{4n+5}}{(4n+4)(4n+5)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To make the estimation we use the Alternating Series Estimation technique,
+ which demonstrates intuitively that the partial sums of terms in an alternating
+ series can provide arbitrarily good estimations of the true sum (or in
+ this case the true value of the integral).
+ 
+\end_layout
+
+\begin_layout Standard
+For this particular estimation because of the rapid growth in the denominator
+ due to the exponential term multiplied by the polynomial term, the estimation
+ converges quickly at 
+\begin_inset Formula $n=2$
+\end_inset
+
+ the terms being added are already within our error bound.
+\end_layout
+
+\begin_layout Standard
+At 
+\begin_inset Formula $n=2$
 \end_inset
 
  
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $a_{n}=\bigg\{\frac{1}{16},\frac{1}{64},\frac{1}{256},...\bigg\}$
+\begin_inset Formula $\Sigma_{n=0}^{2}4(-1)^{n}\frac{0.4^{4n+5}}{(4n+4)(4n+5)}=0.00203361$
 \end_inset
 
+, which is within 0.000001 of the true value of the integral.
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $s_{n}=\Sigma ar^{k}=\Sigma_{n=0}^{\infty}(\frac{1}{16})(\frac{1}{4})^{n}=\frac{\frac{1}{16}}{1-\frac{1}{4}}=\frac{1}{12}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-(b)
-\begin_inset Formula $\Sigma_{n=0}^{\infty}(\frac{1}{2^{n}}+\frac{(-1)^{n}}{5^{n}})$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $a_{n}=\bigg\{2,\frac{3}{10},\frac{29}{100},\frac{117}{1000},...\bigg\}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-First we will split the series up into two separate series and sum the separate
- parts.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $=\Sigma_{n=0}^{\infty}\frac{1}{2^{n}}+\Sigma_{n=0}^{\infty}\frac{(-1)^{n}}{5^{n}}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Note that the series 
-\begin_inset Formula $\Sigma_{n=0}^{\infty}\frac{(-1)^{n}}{5^{n}}$
-\end_inset
-
- is of the form 
-\begin_inset Formula $\bigg\{1,-\frac{1}{5},\frac{1}{25},-\frac{1}{125},...\bigg\}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Which could also be written as 
-\begin_inset Formula $\Sigma_{n=0}^{\infty}(\frac{1}{25})^{n}-\Sigma_{n=0}^{\infty}(-\frac{1}{5})(\frac{1}{25})^{n}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Thus evaluating all 3 geometric series together we have:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\frac{1}{1-\frac{1}{2}}+\frac{1}{1-\frac{1}{25}}-\frac{\frac{1}{5}}{1-\frac{1}{25}}=$
-\end_inset
-
-
 \end_layout
 
 \end_body

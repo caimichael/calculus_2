@@ -74,59 +74,54 @@
 \begin_body
 
 \begin_layout Title
-Assignment 9 Problem One
+Assignment 11 Problem Three
 \end_layout
 
 \begin_layout Author
 Michael Cai
 \end_layout
 
-\begin_layout Subparagraph
-1.
- Find the limits of each of the following sequences:
+\begin_layout Subparagraph*
+3.
+ Suppose that the power series 
+\begin_inset Formula $\Sigma c_{n}(x-a)^{n}$
+\end_inset
+
+ satisfies the given conditions.
+ Show that the radius of convergence of the power series is R.
 \end_layout
 
 \begin_layout Standard
-(a) 
-\begin_inset Formula $a_{n}=(4^{n}n)^{\frac{1}{n}}$
-\end_inset
-
- 
+Condition 1:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $n=1,2,3,4,5,...$
+\begin_inset Formula $c_{n}\neq0$
 \end_inset
 
- 
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+, and 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $a_{n}=4,4(2)^{\frac{1}{2}},4(3)^{\frac{1}{3}},4(4)^{\frac{1}{4}},4(5)^{\frac{1}{5}}...$
-\end_inset
-
- 
+Condition 2:
 \end_layout
 
 \begin_layout Standard
-Suppose 
-\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}\rightarrow L$
+\begin_inset Formula $\lim_{n\rightarrow\infty}\bigg|\frac{c_{n}}{c_{n+1}}\bigg|=R,$
 \end_inset
 
- 
+ where 
+\begin_inset Formula $R$
+\end_inset
+
+ is some positive number.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $a_{n}=4n^{\frac{1}{n}}\rightarrow L$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $ln(4n^{\frac{1}{n}})\rightarrow ln(L)$
-\end_inset
-
 
 \end_layout
 

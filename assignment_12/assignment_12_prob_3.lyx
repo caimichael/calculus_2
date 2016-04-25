@@ -74,37 +74,19 @@
 \begin_body
 
 \begin_layout Title
-Assignment 8 Problem 2
+Assignment 12 Problem Three
 \end_layout
 
 \begin_layout Author
 Michael Cai
 \end_layout
 
-\begin_layout Subparagraph
-2.
- Let 
-\begin_inset Formula $D$
+\begin_layout Subparagraph*
+3.
+ The following is a power series representation of tan(x) 
+\begin_inset Formula $x+\frac{x^{3}}{3}+\frac{2x^{5}}{15}+\frac{17x^{7}}{315}+\frac{62x^{9}}{2835}...$
 \end_inset
 
- be the region between 
-\begin_inset Formula $y=sin(x)$
-\end_inset
-
- and the 
-\begin_inset Formula $x$
-\end_inset
-
--axis on the interval 
-\begin_inset Formula $0\leq x\leq\pi$
-\end_inset
-
-.
- Find the centroid of 
-\begin_inset Formula $D$
-\end_inset
-
-.
  
 \begin_inset ERT
 status open
@@ -124,101 +106,82 @@ status open
 \end_layout
 
 \begin_layout Standard
-The centroid formula for a two-dimensional object as given in class is the
- following:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\bar{x}=\frac{\int_{a}^{b}xf(x)dx}{\int_{a}^{b}f(x)dx}$
+(a) First five terms for the PSR of 
+\begin_inset Formula $ln(|sec(x)|)$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\bar{y}=\frac{\frac{1}{2}\int_{a}^{b}f(x)^{2}dx}{\int_{a}^{b}f(x)dx}$
+\begin_inset Formula $ln(|sec(x)|)=ln(|\frac{1}{cos(x)}|)=ln(1)-ln(|cos(x)|)=-ln(|cos(x)|)$
 \end_inset
 
- 
-\end_layout
 
-\begin_layout Standard
-Thus the specific formula for the problem that we are given is the following:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\bar{x}=\frac{\int_{0}^{\pi}xsin(x)dx}{\int_{0}^{\pi}sin(x)dx}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\bar{y}=\frac{\frac{1}{2}\int_{0}^{\pi}sin^{2}(x)dx}{\int_{0}^{\pi}sin(x)dx}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-The numerator of 
-\begin_inset Formula $\bar{x}$
-\end_inset
-
- can be calculated with a simple IBP:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\int_{0}^{\pi}xsin(x)dx$
-\end_inset
-
- 
 \end_layout
 
 \begin_layout Standard
 Let 
-\begin_inset Formula $u=x$
+\begin_inset Formula $g(x)=-ln(|cos(x)|)$
 \end_inset
 
- and 
-\begin_inset Formula $dv=sin(x)dx$
-\end_inset
 
- 
 \end_layout
 
 \begin_layout Standard
-Then 
-\begin_inset Formula $du=dx$
+\begin_inset Formula $g'(x)=-\frac{sin(x)}{cos(x)}=-tan(x)$
 \end_inset
 
- and 
-\begin_inset Formula $v=-cos(x)$
-\end_inset
 
- 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\int_{0}^{\pi}xsin(x)dx=-xcos(x)\bigg|_{0}^{\pi}+\int_{0}^{\pi}cos(x)dx$
+\begin_inset Formula $g'(x)=-(x+\frac{x^{3}}{3}+\frac{2x^{5}}{15}+\frac{17x^{7}}{315}+\frac{62x^{9}}{2835})=-x-\frac{x^{3}}{3}-\frac{2x^{5}}{15}-\frac{17x^{7}}{315}-\frac{62x^{9}}{2835}$
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=\pi$
+Integrating back to get 
+\begin_inset Formula $g(x)$
 \end_inset
 
- 
+ we get:
 \end_layout
 
 \begin_layout Standard
-Because 
-\begin_inset Formula $\int_{0}^{\pi}sin(x)dx=[-cos(x)]\bigg|_{0}^{\pi}=2$
+\begin_inset Formula $-(\frac{1}{2})x^{2}-(\frac{1}{4})\frac{x^{4}}{3}-(\frac{1}{6})\frac{2x^{6}}{15}-(\frac{1}{8})\frac{17x^{8}}{315}-(\frac{1}{10})\frac{62x^{10}}{2835}=-\frac{x^{2}}{2}-\frac{x^{4}}{12}-\frac{x^{6}}{45}-\frac{17x^{8}}{2520}-\frac{31x^{10}}{14175}$
 \end_inset
 
- 
+
+\end_layout
+
+\begin_layout Standard
+(b) First five terms of the PSR for 
+\begin_inset Formula $sec^{2}(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f(x)=tan(x)=x+\frac{x^{3}}{3}+\frac{2x^{5}}{15}+\frac{17x^{7}}{315}+\frac{62x^{9}}{2835}...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f'(x)=sec^{2}(x)=1+x^{2}+\frac{2x^{4}}{3}+\frac{17x^{6}}{45}+\frac{62x^{8}}{315}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body

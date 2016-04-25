@@ -4,11 +4,6 @@
 \begin_header
 \textclass article
 \use_default_options true
-\begin_modules
-theorems-ams
-eqs-within-sections
-figs-within-sections
-\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -79,155 +74,87 @@ figs-within-sections
 \begin_body
 
 \begin_layout Title
-Assignment 4 Problem 2
+Assignment 11 Problem Three
 \end_layout
 
 \begin_layout Author
 Michael Cai
 \end_layout
 
-\begin_layout Subparagraph
-2.
- Consider the error function, 
-\begin_inset Formula $erf(x)=\frac{2}{\sqrt{\pi}}\int_{0}^{x}e^{-t^{2}}dt$
+\begin_layout Subparagraph*
+3.
+ Suppose that the power series 
+\begin_inset Formula $\Sigma c_{n}(x-a)^{n}$
 \end_inset
 
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
+ satisfies the given conditions.
+ Show that the radius of convergence of the power series is R.
 \end_layout
 
+\begin_layout Standard
+Condition 1:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{n}\neq0$
 \end_inset
 
+ for all 
+\begin_inset Formula $n$
+\end_inset
 
+, and 
 \end_layout
 
-\begin_layout Subparagraph
-(a) Use Simpson's Rule with n = 10 to estimate erf(1)
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
+\begin_layout Standard
+Condition 2:
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $\lim_{n\rightarrow\infty}\bigg|\frac{c_{n}}{c_{n+1}}\bigg|=R,$
+\end_inset
+
+ where 
+\begin_inset Formula $R$
+\end_inset
+
+ is some positive number.
+\end_layout
+
+\begin_layout Standard
+The Ratio Test gives the radius of convergence.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\bigg|\frac{c_{n+1}(x-a)^{n+1}}{c_{n}(x-a)^{n}}\bigg|=\bigg|\frac{c_{n+1}}{c_{n}}\bigg|\times\bigg|x-a\bigg|<1$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-To calculate 
-\begin_inset Formula $S_{10}$
-\end_inset
-
- for the 
-\begin_inset Formula $erf(1)$
-\end_inset
-
- we must first find the 
-\begin_inset Formula $\Delta x$
-\end_inset
-
-'s and the corresponding 
-\begin_inset Formula $y$
-\end_inset
-
-'s.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\Delta x=\frac{1-0}{10}=\frac{1}{10}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Therefore, 
-\begin_inset Formula $x_{0}=0$
-\end_inset
-
- 
-\begin_inset Formula $x_{1}=\frac{1}{10}$
-\end_inset
-
- 
-\begin_inset Formula $x_{2}=\frac{2}{10}$
-\end_inset
-
- 
-\begin_inset Formula $x_{3}=\frac{3}{10}$
-\end_inset
-
- ...
- 
-\begin_inset Formula $x_{10}=\frac{10}{10}$
+\begin_inset Formula $\implies\bigg|x-a\bigg|<\bigg|\frac{c_{n}}{c_{n+1}}\bigg|$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-And thus, we calculate 
-\begin_inset Formula $y_{0}$
+Thus the radius of convergence equals 
+\begin_inset Formula $\bigg|\frac{c_{n}}{c_{n+1}}\bigg|$
 \end_inset
 
- through 
-\begin_inset Formula $y_{10}$
+, which equals 
+\begin_inset Formula $R$
 \end_inset
 
- in the following way:
-\end_layout
-
-\begin_layout Standard
-Let 
-\begin_inset Formula $m$
+ as you take the limit.
+ Thus the radius of convergence of the power series is 
+\begin_inset Formula $R$
 \end_inset
 
- represent 
-\begin_inset Formula $\frac{2}{\\sqr}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subparagraph
-(b) In the interval [0,1] 
-\begin_inset Formula $|\frac{d^{4}}{dt^{4}}(e^{-t^{2}})|\leq12.$
-\end_inset
-
- Use this information to give an upper bound for the magnitude of error
- of the estimate in part (a).
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\end_inset
-
-
+.
+ 
 \end_layout
 
 \end_body

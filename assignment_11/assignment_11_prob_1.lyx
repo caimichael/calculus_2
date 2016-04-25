@@ -1,0 +1,525 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Assignment 11 Problem One
+\end_layout
+
+\begin_layout Author
+Michael Cai
+\end_layout
+
+\begin_layout Subparagraph*
+1.
+ Find the radius of convergence and interval of convergence of the following
+ power series.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(a) 
+\begin_inset Formula $\Sigma_{n=1}^{\infty}\sqrt[n]{n}(2x+5)^{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Use the Ratio Test:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\bigg|\frac{(n+1)^{\frac{1}{n+1}}(2x+5)^{n+1}}{n^{\frac{1}{n}}(2x+5)^{n}}\bigg|=\frac{(n+1)^{\frac{1}{n+1}}}{n^{\frac{1}{n}}}\times\bigg|\frac{(2x+5)^{n+1}}{(2x+5)^{n}}\bigg|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To discover what the first component converges to lets assume:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{(n+1)^{\frac{1}{n+1}}}{n^{\frac{1}{n}}}=L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(n+1)^{\frac{1}{n+1}}=L(n^{\frac{1}{n}})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $((n+1)^{\frac{1}{n+1}})^{n+1}=(L(n^{\frac{1}{n}}))^{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n+1=L^{n+1}(n^{\frac{1}{n}})^{n+1}=L^{n+1}n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{n+1}{n}=L^{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{n}{n}+\frac{1}{n}=L^{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{n\rightarrow\infty}1=L^{n+1}\implies L=1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Thus the Ratio Test produces 
+\begin_inset Formula $|2x+5|<1\implies|x+\frac{5}{2}|<\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $-\frac{1}{2}<x+\frac{5}{2}<\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $-3<x<-2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus the radius of convergence is 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+We must check the endpoints 
+\begin_inset Formula $-3$
+\end_inset
+
+ and 
+\begin_inset Formula $-2$
+\end_inset
+
+ to see if the series is convergent on the ends.
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $x=-3$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The series equals 
+\begin_inset Formula $\Sigma_{n=1}^{\infty}\sqrt[n]{n}(-1)^{n}=\Sigma(n)^{\frac{1}{n}}(-1)^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that 
+\begin_inset Formula $n^{\frac{1}{n}}$
+\end_inset
+
+ can be re-written as 
+\begin_inset Formula $e^{\frac{log(n)}{n}}=(e^{log(n)})^{\frac{1}{n}}=n^{\frac{1}{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus we can apply L'Hospital's to the exponential.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{log(n)}{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L'=\frac{\frac{1}{n}}{1}=\frac{1}{n}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus as 
+\begin_inset Formula $\lim_{n\rightarrow\infty}n^{\frac{1}{n}}=e^{\frac{log(n)}{n}}=e^{0}=1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Thus the original series just becomes the Grandeis Series at the limit,
+ which we know to be divergent (oscillating between -1 and 1).
+ 
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $x=-2$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The series equals 
+\begin_inset Formula $\Sigma_{n=1}^{\infty}\sqrt[n]{n}$
+\end_inset
+
+, which as proven earlier is also divergent since the limit of 
+\begin_inset Formula $\sqrt[n]{n}$
+\end_inset
+
+ approaches 1.
+ 
+\end_layout
+
+\begin_layout Standard
+Thus the interval of convergence is 
+\begin_inset Formula $(-3,-2)$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(b) 
+\begin_inset Formula $\Sigma_{n=1}^{\infty}\frac{(n!)^{2}}{2^{n}(2n)!}x^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Use the Ratio Test:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\bigg|\frac{\frac{((n+1)!)^{2}}{2^{n+1}(2(n+1))!}x^{n+1}}{\frac{(n!)^{2}}{2^{n}(2n)!}x^{n}}\bigg|=|\frac{x^{n+1}}{x^{n}}|\times\frac{((n+1)!)^{2}}{(n!)^{2}}\times\frac{2^{n}}{2^{n+1}}\times\frac{(2n)!}{(2n+2)!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=x\times\frac{((n+1)n!)^{2}}{(n!)^{2}}\times\frac{1}{2}\times\frac{(2n)!}{(2n+2)(2n+1)(2n)!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=x\times(n+1)^{2}\times\frac{1}{2}\times\frac{1}{(2n+2)(2n+1)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{1}{2}x\times\frac{n^{2}+2n+1}{4n^{2}+6n+2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We know that the polynomial on the right converges to 
+\begin_inset Formula $\frac{1}{4}$
+\end_inset
+
+ as we take the limit (split the polynomial into each numerator term over
+ the denominator, divide by the greatest multiple of n in the numerator
+ and all the terms should approach zero with the exception of the 
+\begin_inset Formula $\frac{n^{2}}{4n^{2}...}$
+\end_inset
+
+ term which equals 
+\begin_inset Formula $\frac{1}{4}$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $|\frac{1}{8}x|<1\implies|x|<8$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Thus the radius of convergence is equal to 8.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we must check the endpoints of 
+\begin_inset Formula $-8$
+\end_inset
+
+ and 
+\begin_inset Formula $8$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $x=-8$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The series equals 
+\begin_inset Formula $\Sigma_{n=1}^{\infty}\frac{(n!)^{2}}{2^{n}(2n)!}(-8)^{n}=\Sigma(-1)^{n}\times\frac{8^{n}}{2^{n}}\times\frac{(n!)^{2}}{(2n)!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To check what 
+\begin_inset Formula $\frac{(n!)^{2}}{(2n)!}$
+\end_inset
+
+ converges to we employ the Ratio Test again:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\bigg|\frac{\frac{((n+1)!)^{2}}{(2n+2)!}}{\frac{(n!)^{2}}{(2n)!}}\bigg|=\frac{((n+1)!)^{2}}{(n!)^{2}}\times\frac{(2n)!}{(2n+2)!}=\frac{((n+1)n!)^{2}}{(n!)^{2}}\times\frac{(2n)!}{(2n+2)(2n+1)2n!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=(n+1)^{2}\times\frac{1}{(2n+2)(2n+1)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\frac{1}{2}\times\frac{1}{2n+1}\times(n+1)$
+\end_inset
+
+, which converges to 
+\begin_inset Formula $\frac{1}{4}$
+\end_inset
+
+ as you take the limit.
+\end_layout
+
+\begin_layout Standard
+Thus the expression we were evaluating before as you take the limit is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Sigma(-1)^{n}\times4^{n}\times\frac{1}{4}$
+\end_inset
+
+, which is divergent.
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $x=8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The series equals 
+\begin_inset Formula $\Sigma_{n=1}^{\infty}\frac{(n!)^{2}}{2^{n}(2n)!}(8^{n})$
+\end_inset
+
+, which is also divergent (because if we've proven that the series is not
+ conditionally convergent then it cannot be absolutely convergent).
+ 
+\end_layout
+
+\begin_layout Standard
+Thus the interval of convergence is 
+\begin_inset Formula $(-8,8).$
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document

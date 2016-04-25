@@ -252,14 +252,23 @@ The information given indicates that in the equation
 \end_inset
 
  that 
-\begin_inset Formula $L=12*\frac{2}{\sqrt{\pi}}=\frac{24}{\sqrt{\pi}}$
+\begin_inset Formula $L=12$
 \end_inset
 
  then 
-\begin_inset Formula $|E_{S}|=\frac{L(1)^{5}}{180(10^{4})}\approx7.522528*10^{-6}$
+\begin_inset Formula $|E_{S}|=\frac{L(1)^{5}}{180(10^{4})}\approx6.666667*10^{-6}$
 \end_inset
 
- 
+ .
+\end_layout
+
+\begin_layout Standard
+The reason why we don't multiply the error estimate by the constant 
+\begin_inset Formula $\frac{2}{\sqrt{\pi}}$
+\end_inset
+
+ is because a constant multiple should not affect the amount of error in
+ the estimation of an integral.
 \end_layout
 
 \end_body
